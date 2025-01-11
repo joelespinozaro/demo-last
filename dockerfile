@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Comando predeterminado para ejecutar la aplicación
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
